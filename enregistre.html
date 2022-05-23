@@ -1,0 +1,67 @@
+{{define "menu"}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/Antyk.png">
+        <link rel="stylesheet" href="css/registrer.css">
+        <title>ANTYK FORUM</title>
+    </head>
+    <body>
+        <div class="character-container">
+        <form>
+            <h1>S'enregistrer</h1>
+            <div class="register-container">
+                <div class="character-registre">
+                    <div class="space-character">
+                        <div class="container-prenom">
+                            <label for="prenom"><h4>Prénom :</h4></label>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+                    </div>
+                    <div class="pseudo-character">
+                        <div class="container-prenom">
+                            <label for="pseudo"><h4>Pseudo :</h4></label>
+                            <input type="text" id="pseudo" name="pseudo" value="hello">
+                        </div>
+                    </div>
+                    <div class="character-mail">
+                        <label for="Email"><h4>Email :</h4></label>
+                        <input type="text" id="email" name="Email">
+                    </div>
+                    <div class="character-confimail">
+                        <label for="Email"><h4>Confirmer votre adress mail :</h4></label>
+                        <input type="text" id="email" name="Email2">
+                    </div>
+                    <div class="pays">
+                        <label for="pays"><h4>Pays :</h4></label>
+                        <input type="text" id="pays" name="pays">
+                    </div>
+                    <div class="password">
+                        <label for="password"><h4>Mot de passe :</h4></label>
+                        <input type="text" id="password" name="password">
+                    </div>
+                </div>
+                <div class="mom">
+                    <div class="container-nom">
+                        <label for="nom"><h4>Nom :</h4></label>
+                        <input type="text" id="nom" name="Nom">
+                    </div>
+                    <div class="check-box">
+                        <p>j'accepte les conditions d'utilisation.</p>
+                        <input type="checkbox" id="check-box" name="check">
+                        <p>j'accepte de recevoir des notifications. </p>
+                        <input type="checkbox" id="check-box" name="check">
+                    </div>
+                 </div>
+            </div>
+            <div class="berme">
+                    <input id="envoyer" type="submit" value="envoyer" name="run">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
+{{end}}
